@@ -63,14 +63,16 @@
     </script>
 
     <script id="sidebar-template", type="text/html">
-        <h2>{{room}}</h2>
+        <h2 id="room-title">{{room}}</h2>
         
-        <h3>Users</h3>
-        <ul>
-            {{#users}}
-                <li>{{username}}</li>
-            {{/users}}
-        </ul>
+        <div class="container">
+            <h3>Users</h3>
+            <ul>
+                {{#users}}
+                    <li class="username dark-grey">{{username}}</li>
+                {{/users}}
+            </ul>
+        </div>
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
